@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.brandonhebel.com']
+ALLOWED_HOSTS = ['www.brandonhebel.com', 'localhost']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'brandon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['brandon/templates', 'resume/templates/resume'],
+        'DIRS': ['brandon/brandon/templates', 'brandon/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
