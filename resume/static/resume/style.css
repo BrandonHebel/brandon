@@ -1,36 +1,47 @@
 .container {
 }
 #left-col {
-  padding-top: 10px;
+  padding-top: 20px;
+  max-width: 275px;
+  min-width: 275px;
+  border: 3px solid #2C3E50;
+  border-top: 0px;
 }
 .left-col {
-  background-color: powderblue;
+  background-color: burlywood;
+
 }
 #right-col {
   padding-top: 10px;
   background-color: #ecf0f1;
+  border-bottom: 3px solid #2C3E50;
+  border-right: 3px solid #2C3E50;
 }
 #header-div {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+#body-div {
+  width = 100%;
+}
 .header {
   background-color: #2C3E50;
 }
 .skill {
-  text-align: center;
-  padding-top: 10px;
-  font-weight: bold;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
 }
 .fas {
   padding-right: 10px;
 }
 hr {
   display:inline-block;
-  width: 200px;
 }
 h3 {
   display: inline-block;
+  padding-left: 25px;
+  background-color: #ecf0f1;
+  width: 100%;
 }
 .contact {
   text-align: justify;
@@ -38,6 +49,8 @@ h3 {
 h1 {
   font-weight: bold;
   color: whitesmoke;
+  display: inline-block;
+  padding-top: 30px;
 }
 .fa-cogs {
   color: whitesmoke;
@@ -46,8 +59,20 @@ h1 {
   color: whitesmoke;
 }
 h4 {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0px 10px 0px;
   padding: 10px 10px 10px;
   color: whitesmoke;
   background-color: #2C3E50;
+}
+#self_portrait {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.progress {
+  width: 60%;
+}
+a {
+  color: black;
 }
