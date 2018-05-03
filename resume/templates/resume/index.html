@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}<title>Brandon Hebel's Resume</title>{% endblock %}
-{% block style %}<link rel="stylesheet" href="{% static 'resume/style.css' %}">{% endblock %}
+{% block stylesheet %}<link rel="stylesheet" href="{% static 'resume/style.css' %}">{% endblock %}
 {% block content %}
   <div class="container">
     <div id="header-div" class="row header" > <!-- start #header-div -->
@@ -9,7 +9,7 @@
         <img id="self_portrait" src="{% static 'resume/me.jpg' %}" />
       </div>
       <div class="col-9 header">
-        <h1>Brandon Hebel</h1>
+        <h1 text-align="center">Brandon Hebel</h1>
         <table>
           <tbody>
             <tr>
@@ -27,58 +27,89 @@
         <div class="contact"><i class="fa fa-mobile fa-fw"></i><a href="tel:+1-608-333-1466">(608)333-1466</a></div>
         <div class="contact"><i class="fas fa-envelope fa-fw"></i>hebefrolfing@gmail.com</div>
         <br />
-        <h3>Skills</h3>
+        <h3>Languages</h3>
         <table class="table table-sm skill">
+          <tr>
+            <td class="left-col">
+              <h5 class="skill">Python</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                </div>
+              </div>
+            </td>
+          </tr>
           <tr>
             <td class="left-col">
               <h5 class="skill">Java</h5>
               <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:72%">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
                 </div>
               </div>
             </td>
           </tr>
           <tr>
             <td class="left-col">
-              <h5 class="skill">HTML, CSS, jQuery, Bootstrap</h5>
+              <h5 class="skill">PHP</h5>
               <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:66%"></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="left-col">
-              <h5 class="skill">Python and Django</h5>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                 </div>
               </div>
             </td>
           </tr>
           <tr>
             <td class="left-col">
-              <h5 class="skill">SQL Django ORM</h5>
+              <h5 class="skill">C++</h5>
               <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
                 </div>
               </div>
             </td>
           </tr>
+        </table>
+        <h3>Tools</h3>
+        <table class="table table-sm skill">
           <tr>
             <td class="left-col">
-              <h5 class="skill">LAMP</h5>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                </div>
-              </div>
+              <h5 class="skill">SQL (MySQL & Django ORM)</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-col">
+              <h5 class="skill">HTML, CSS, JavaScript, jQuery, Bootstrap</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-col">
+              <h5 class="skill">MVC Frameworks (Django & PHP Frameworks)</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-col">
+              <h5 class="skill">Linux, Git, Virtual Enviorments, Terminal, Command Prompt</h5>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-col">
+              <h5 class="skill">Server Deployment and Administration</h5>
+              <ul>
+                <li>LAMP</li>
+                <li>Virtual Servers (AWS)</li>
+                <li>Python Servers (PythonAnywhere)</li>
             </td>
           </tr>
         </table>
       </div> <!-- end left-col -->
       <div id="right-col" class="col"> <!-- start #right-col -->
         <h4>Profile</h4>
-        <p>This is where I talk a bit about myself and why I would be perfect for the job!
-        <h4>Job History</h4>
+        <p>A pationate coder ready to start a carrer in programming. Whether that
+          carrer falls into the area of Web Development or more generalized Software
+          Engineering, my skills would be of great value. To the extent of Web Development,
+          I would be best utilized as a back-end developer.  I do have a solid skill-set
+          in front-end development, however, web design is not my forte.  I am eager to learn
+          how to become the best coder I can be in real world applications. I believe this
+          is ideal for your company, as you can shape me into the programmer you need.
+        </p>
+        <h4>Job and Education History</h4>
         <table class="table table-sm">
           <tbody>
             <tr><td>Jul 2009 to Mar 2013</td>
@@ -87,11 +118,15 @@
             <tr><td></td>
               <td>
                 <ul>
-                  <li>Involvement in many aspects of U.S. Airborne Operations</li>
+                  <li>Involved in many aspects of U.S. Airborne Operations</li>
                   <li>Badges Earned: Airborne, Parachute Rigger, and Pathfinder</li>
-                  <li>Values: Teamwork, Accountability, Attention to Detail, and Patience</li>
+                  <li>Values Strengthend: Teamwork, Accountability, Attention to Detail, and Patience</li>
+                  <li>Honarbly Discharged with DD Form 214</li>
                 </ul>
               </td>
+            </tr>
+            <tr><td>Jan 2013 to Aug 2015</td>
+              <td>Full-Time Student - UW-Whitewater</td>
             </tr>
             <tr><td>Oct 2015 to Mar 2016</td>
               <td>Sales Associate - Ultracom Wireless</td>
@@ -99,29 +134,54 @@
             <tr><td></td>
               <td>
                 <ul>
-                  <li>Authorized Agent for U.S. Cellular products</li>
-                  <li>Performed Sales, Account Reviews, and Customer Service</li>
+                  <li>Authorized Agent for U.S. Cellular</li>
+                  <li>Performed Sales and Customer Service</li>
+                  <li>Arranged Customized Sales Packages from Account Analyses</li>
+                  <li>Troubleshot Many Android and iOS End-User Issues</li>
                 </ul>
               </td>
             </tr>
-            <tr><td>Oct 2017 to Current</td>
-              <td>HVAC Technition - Shields Fireside Heating and Cooling</td>
+            <tr><td>Mar 2016 to Oct 2017</td>
+              <td>Full-Time Student - UW-Whitewater (Online) and Stay at Home Father</td>
+            </tr>
+            <tr><td>Oct 2017 to April 2018</td>
+              <td>HVAC Technition - Shields Fireside Hearth & Home</td>
             </tr>
             <tr><td></td>
               <td>
                 <ul>
-                  <li>Installed and Repaired Fireplaces, Furnances, Boilers, and Air Conditioning Units</li>
+                  <li>Installing Fireplaces, Furnances, Boilers, and Air Conditioning Units</li>
+                  <li>Resolving Software and Networking Issues for the Small Business</li>
+                  <li>Laid-off due to lack of work</li>
                 </ul>
               </td>
             </tr>
           </tbody>
         </table>
         <h4>Education</h4>
-        <h5>University of Wisconsin</h5>
-        <h5>Bachelor in Computer Science</h5>
-        <h6>- General Business Minor</h6>
+        <h5>University of Wisconsin - Whitewater - Bachelor of Science</h5>
+        <ul>
+          <li><h6>Computer Science with General Business Minor</h6></li>
+          <table class="table"><thead><th>Areas Studied</th></thead>
+            <tr>
+              <td><li>Web Development (PHP)</li></td>
+              <td><li>Network Security</li></td>
+              <td><li>Web Server and Unix Administration (CentOS)</li></td>
+            </tr>
+            <tr>
+              <td><li>Software Engineering</li></td>
+              <td><li>Programming (Java and Python)</li></td>
+              <td><li>Data Structures</li></td>
+            </tr>
+            <tr>
+              <td><li>Theory of Algorithms</li></td>
+              <td><li>Database (MySQL)</li></td>
+              <td><li>Operating Systems</li></td>
+
+          </table>
+        </ul>
       </div> <!-- end #right-col -->
     </div> <!-- end #body-div -->
   </div> <!-- end .container -->
-  {% block script %}<script src="http://localhost:35729/livereload.js"></script>{% endblock %}
+  {% block javascript %}<script src="http://localhost:35729/livereload.js"></script>{% endblock %}
 {% endblock %}
