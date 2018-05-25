@@ -1,7 +1,0 @@
-.header_link {
-  float: right;
-  color: whitesmoke;
-  padding-top: 10px;
-}
-
-<a class="header_link" href="http://www.brandonhebel.com"><h5 class="header_link">www.brandonhebel.com</h5></a>
