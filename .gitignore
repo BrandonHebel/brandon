@@ -59,6 +59,7 @@ target/
 __pycache__/
 local_settings.py
 secrets.py
+static/
 
 .env
 db.sqlite3
