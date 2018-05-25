@@ -67,3 +67,6 @@ db.sqlite3
 ### SublimeText ###
 *.sublime-project
 *.sublime-workspace
+
+### Misc ###
+scratchpad.txt
